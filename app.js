@@ -13,7 +13,7 @@ const  expressSession = require('express-session')({
   saveUninitialized: false,
 });
 const User = require('./models/user');
-
+ 
 const  index = require('./routes/index');
 const  api = require('./routes/api/index');
 const  users = require('./routes/api/users');
@@ -38,9 +38,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
 app.use('/api', api);
 app.use('/api/users', users);
+app.use('/*', index);
 
 //Configure Passport
 
