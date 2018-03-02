@@ -1,3 +1,15 @@
 {
-	"extends": "airbnb"
+	"extends": "airbnb",
+	"plugins": ["jest"],
+	"env": {
+	  "jest/globals": true,
+	  "browser": true,
+	  "node": true
+	},
+	"rules": {
+	  "no-unused-vars": ["error", {"argsIgnorePattern":"next"}],
+	  "react/prop-types": [0],
+	  "prefer-destructuring": ["error", { "array": false, "object": false }],
+	  "linebreak-style": 0
+	}
 }

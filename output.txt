@@ -1,0 +1,9 @@
+yarn run v1.3.2
+$ eslint .
+
+C:\Users\Elliot\Hobbyverse\MusicList\musiclist\models\user.js
+  3:7  error  Use object destructuring  prefer-destructuring
+
+✖ 1 problem (1 error, 0 warnings)
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
