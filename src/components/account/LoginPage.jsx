@@ -23,7 +23,7 @@ export default class LoginPage extends React.Component {
 
   // update state as password values changes
   handlePasswordChange(e) {
-    this.setState({ password: e.target.value })
+    this.setState({ password: e.target.value });
   }
 
   compileFormData() {
